@@ -109,7 +109,7 @@ pub fn get_greeting_height(greeter: &Greeter, padding: u16, fallback: u16) -> (O
   if let Some(greeting) = &greeter.greeting {
     let width = greeter.width();
 
-    let text = match greeting.clone().trim().into_text() {
+    let text = match greeting.trim().into_text() {
       Ok(text) => text,
       Err(_) => Text::raw(greeting),
     };

@@ -23,10 +23,10 @@ use crate::{
   Greeter,
 };
 
-const LAST_USER_USERNAME: &str = "/var/cache/tuigreet/lastuser";
-const LAST_USER_NAME: &str = "/var/cache/tuigreet/lastuser-name";
-const LAST_COMMAND: &str = "/var/cache/tuigreet/lastsession";
-const LAST_SESSION: &str = "/var/cache/tuigreet/lastsession-path";
+const LAST_USER_USERNAME: &str = "/var/lib/tuigreet/lastuser";
+const LAST_USER_NAME: &str = "/var/lib/tuigreet/lastuser-name";
+const LAST_COMMAND: &str = "/var/lib/tuigreet/lastsession";
+const LAST_SESSION: &str = "/var/lib/tuigreet/lastsession-path";
 
 const DEFAULT_MIN_UID: u16 = 1000;
 const DEFAULT_MAX_UID: u16 = 60000;
